@@ -1,0 +1,19 @@
+<form >
+    <h1>CRIAR NOVA CATEGORIA</h1>
+
+    <mat-form-field class="form">
+        <mat-label>Nome:</mat-label>
+        <input matInput [(ngModel)]="categoria.nome" type="text" name="nome" placeholder="Ex: Computação" >
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Descrição:</mat-label>
+        <textarea matInput [(ngModel)]="categoria.descricao" type="text" name="descricao" placeholder="Ex: Livros de Computação" ></textarea>
+    </mat-form-field>
+
+   <div class="buttons">
+    <button (click)="create()" class="mat-elevation-z8 content-table" mat-stroked-button color="primary" style="color: white;"><mat-icon class="icon-add" style="margin-right: .3rem; margin-bottom: .2rem;">add_circle</mat-icon>CRIAR CATEGORIA</button>
+    <button class="mat-elevation-z8 content-table" mat-stroked-button color="warn"><mat-icon class="icon-add" style="margin-right: .3rem; margin-bottom: .2rem;">highlight_off</mat-icon>CANCELAR</button>
+
+   </div> 
+</form>
