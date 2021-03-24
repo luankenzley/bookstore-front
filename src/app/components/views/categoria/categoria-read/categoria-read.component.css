@@ -8,6 +8,15 @@
     margin-bottom: 3rem;
 }
 
+button {
+    margin-bottom: .8rem;
+    
+}
+.icon-add{
+    color: white;
+    margin-right: .3rem;
+}
+
 .title h1 {
     font-size: 2rem;
     color: rgb(160, 152, 152);
@@ -15,4 +24,23 @@
 }
 .table{
     width: 100%;
+}
+
+.livros{
+    color: rgb(67, 194, 194);
+    margin-left: .5rem;
+}
+
+
+.edit {
+    color: rgb(248, 134, 52);
+}
+
+.delete {
+    color: rgb(252, 27, 27);
+    margin-left: .5rem;
+}
+
+.mat-header {
+    width: 5rem;
 }
