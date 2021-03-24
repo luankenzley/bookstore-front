@@ -1,0 +1,18 @@
+.container{
+    height: 85%;
+    background-color: #514949;
+}
+
+i {
+    padding-right: .6rem;
+    color: white;
+}
+
+mat-sidenav {
+    background-color: #514949;
+}
+
+.textoMenu {
+    color: white;
+}
+
