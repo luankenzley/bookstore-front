@@ -1,0 +1,28 @@
+<form >
+    <h1>ADICIONAR NOVO LIVRO</h1>
+
+    <mat-form-field class="form">
+        <mat-label>Titulo</mat-label>
+        <input matInput [(ngModel)]="livro.titulo" [formControl]="titulo" required type="text" name="titulo" placeholder="Ex: Curso de JAVA - ORIENTAÇÃO A OBJETOS" maxlength="100" >
+        <mat-error *ngIf="titulo.invalid">{{ getMessage() }}</mat-error>
+
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Nome do Autor</mat-label>
+        <input matInput [(ngModel)]="livro.nome_autor" [formControl]="nome_autor" required  type="text" name="nome_autor" placeholder="Ex: Luan Kenzley" maxlength="100" >
+        <mat-error *ngIf="nome_autor.invalid">{{ getMessage() }}</mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Texto</mat-label>
+        <textarea matInput [(ngModel)]="livro.texto" [formControl]="texto" required   type="text" name="descricao" placeholder="Ex: Livro com foco para iniciantes..." maxlength="2000000" ></textarea>
+        <mat-error *ngIf="texto.invalid">{{ getMessage() }}</mat-error>
+    </mat-form-field>
+
+   <div class="buttons">
+    <button (click)="create()" [disabled]="getMessage()" class="mat-elevation-z8 content-table" mat-stroked-button color="primary" style="color: white;"><mat-icon class="icon-add" style="margin-right: .3rem; margin-bottom: .2rem;">add_circle</mat-icon>CRIAR LIVRO</button>
+    <button (click)="cancel()"class="mat-elevation-z8 content-table" mat-stroked-button color="warn"><mat-icon class="icon-add" style="margin-right: .3rem; margin-bottom: .2rem;">highlight_off</mat-icon>CANCELAR</button>
+
+   </div> 
+</form>
